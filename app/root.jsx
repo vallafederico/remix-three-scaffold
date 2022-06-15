@@ -39,6 +39,12 @@ export function links() {
   ];
 }
 
+// export const headers = () => {
+//   return {
+//     "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
+//   };
+// };
+
 export default function App() {
   // clicked state test for THREE
   const [clicked, setClicked] = useState(false);

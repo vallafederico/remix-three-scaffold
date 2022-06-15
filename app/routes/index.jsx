@@ -1,5 +1,5 @@
 import { useOutletContext } from "@remix-run/react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 import stylesIndex from "../styles/index.css";
 // import Canvas from "../gl/Canvas";
@@ -12,6 +12,12 @@ export function Links() {
     },
   ];
 }
+
+export const headers = () => {
+  return {
+    "Cache-Control": "public, max-age=31536000, s-maxage=31536000",
+  };
+};
 
 export default function Index() {
   const { clicked, setClicked } = useOutletContext();
